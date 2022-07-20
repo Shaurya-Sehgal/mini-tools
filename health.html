@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #fcf712">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Mini Tools</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="math.html"
+                >Math</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="finance.html"
+                >Finance</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary"
+                aria-current="page"
+                href="health.html"
+                >Health</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="random.html"
+                >Randomness</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide my-5"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/health.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/health.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/health.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div
+        class="row text-center my-5 bg-secondary bg-opacity-25 rounded shadow p-3"
+      >
+        <h1>Health</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
+          facilis delectus? Provident rem cumque nobis fuga libero esse
+          voluptates aut delectus magni sed tempora ad, explicabo corrupti
+          facere quisquam laboriosam id aliquam doloremque ex. Reiciendis est
+          quis ea magnam harum, amet explicabo perferendis, vitae eum nihil
+          distinctio in repudiandae. Quisquam assumenda iste dolore et omnis
+          doloremque id delectus libero aliquam eius, quaerat fugit cum
+          blanditiis praesentium veniam ducimus. Facere architecto reiciendis
+          quos ea veritatis, nostrum, eligendi neque veniam saepe a minima sint
+          at optio aperiam ut nisi! Asperiores quidem reprehenderit eius beatae
+          sapiente eum quasi eligendi id similique aliquid, maiores
+          exercitationem quo nemo tempore qui ad! Quia maxime neque voluptate
+          molestiae placeat eos debitis at, odit dolorum sed et assumenda
+          doloremque harum tempore explicabo necessitatibus nesciunt quibusdam
+          cum! Suscipit, incidunt.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="images/bmi.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">BMI Calculater</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="/health/bmi.html" class="btn btn-primary">Use tool</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="images/bmr.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">BMR Calculator</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="/health/bmr.html" class="btn btn-primary">Use tool</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://play-lh.googleusercontent.com/HVqqlF-pFt4xFdTBtK_vc7arwa9wB1clBX7FvLYnRm23-RhwfPWHWdzT4KWmqvJNrI0=w240-h480-rw"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">BSA Calculator</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="/health/bsa.html" class="btn btn-primary">Use tool</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/premium-vector/overweight-human-with-fat-feet-scales-isolated-white-person-with-weight-standing-weighing-machine-heavy-woman_91248-773.jpg?w=2000"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Am I Overweight?</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="/health/overweight.html" class="btn btn-primary"
+                >Use tool</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
