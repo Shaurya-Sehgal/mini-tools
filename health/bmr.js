@@ -11,6 +11,13 @@ function check() {
       4.799 * givenheight -
       5.677 * givenage +
       5;
+    bmr = bmr.toFixed(2);
+    document.getElementById("result").innerText =
+      "You need at least " + bmr + " calories";
+  } else {
+    let bmr =
+      447.593 + 9.247 * givenweight + 3.098 * givenheight - 4.33 * givenage;
+    bmr = bmr.toFixed(2);
     document.getElementById("result").innerText =
       "You need at least " + bmr + " calories";
   }

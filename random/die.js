@@ -1,7 +1,6 @@
 function check() {
   let num = Math.random() * 6 + 1;
   num = Math.floor(num);
-  console.log(num);
   if (num == 1) {
     document.getElementById("die").src =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1024px-Dice-1-b.svg.png";
