@@ -32,42 +32,39 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link text-dark"
-                aria-current="page"
-                href="/index.html"
+              <a class="nav-link" aria-current="page" href="/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-dark"
+                class="nav-link"
                 aria-current="page"
-                href="/math.html"
+                href="mini-tools/math.html"
                 >Math</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-dark"
+                class="nav-link"
                 aria-current="page"
-                href="/finance.html"
+                href="mini-tools/finance.html"
                 >Finance</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-dark"
+                class="nav-link"
                 aria-current="page"
-                href="/health.html"
+                href="mini-tools/health.html"
                 >Health</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-secondary"
+                class="nav-link active"
                 aria-current="page"
-                href="/random.html"
+                href="mini-tools/random.html"
                 >Randomness</a
               >
             </li>
@@ -86,12 +83,15 @@
     </nav>
     <div class="container text-center">
       <h1 class="text-center my-2">Toss The Coin</h1>
-      <img
-        class="w-50 rounded my-3"
-        id="coin"
-        src="https://clipart.world/wp-content/uploads/2021/09/Gold-Coin-clipart-png.png"
-        alt=""
-      />
+      <a href="#">
+        <img
+          class="w-50 rounded my-3"
+          id="coin"
+          src="https://clipart.world/wp-content/uploads/2021/09/Gold-Coin-clipart-png.png"
+          alt=""
+          onclick="check()"
+        />
+      </a>
       <div>
         <button
           class="btn bg-opacity-25 bg-secondary my-2 w-50"
