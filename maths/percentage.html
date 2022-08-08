@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav
@@ -91,7 +92,7 @@
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Percent_sign_icon.svg/2048px-Percent_sign_icon.svg.png"
         alt=""
       />
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Number</span
         >
@@ -116,6 +117,19 @@
           class="btn bg-opacity-25 bg-secondary"
           id="check"
           onclick="check()"
+        >
+          Check
+        </button>
+      </div>
+      <div class="inputs-2">
+        <span>Number</span>
+        <input class="mb-2" type="text" id="number2" />
+        <span>Out of</span>
+        <input class="mb-2" type="text" id="outOf2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary"
+          id="check"
+          onclick="check2()"
         >
           Check
         </button>

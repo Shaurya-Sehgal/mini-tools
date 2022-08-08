@@ -1,0 +1,14 @@
+.inputs-2 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .inputs {
+    display: none;
+  }
+  .inputs-2 {
+    display: block;
+  }
+  .inputs-2 input {
+    width: 100%;
+  }
+}
