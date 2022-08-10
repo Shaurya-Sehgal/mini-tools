@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -100,7 +101,7 @@
         <option value="simple">Simple</option>
         <option value="compound">Compound</option>
       </select>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Principal Amount</span
         >
@@ -112,7 +113,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Rate of Interest</span
         >
@@ -124,9 +125,9 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
-          >Time</span
+          >Time(years)</span
         >
         <input
           type="text"
@@ -139,6 +140,25 @@
           class="btn bg-opacity-25 bg-secondary"
           id="check"
           onclick="check()"
+        >
+          Check
+        </button>
+      </div>
+      <div class="inputs-2">
+        <span>Principal Amount</span>
+        <input class="mb-2" type="text" id="amount2" />
+      </div>
+      <div class="inputs-2">
+        <span>Rate Of Interest</span>
+        <input class="mb-2" type="text" id="rate2" />
+      </div>
+      <div class="inputs-2">
+        <span>Time(years)</span>
+        <input class="mb-2" type="text" id="time2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary mb-2"
+          id="check"
+          onclick="check2()"
         >
           Check
         </button>

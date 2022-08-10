@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -87,11 +88,11 @@
     <div class="container text-center">
       <h1 class="text-center my-2">Odd-Even Calculator</h1>
       <img
-        class="w-50 rounded"
+        class="w-50 rounded mb-2"
         src="https://ck12live.s3.ap-south-1.amazonaws.com/user/5f7883e8678d583cd460df20/project_cover/original/1607173987250-odd-or-even.png"
         alt=""
       />
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Number</span
         >
@@ -106,6 +107,17 @@
           class="btn bg-opacity-25 bg-secondary"
           id="check"
           onclick="check()"
+        >
+          Check
+        </button>
+      </div>
+      <div class="inputs-2">
+        <span>Number</span>
+        <input class="mb-2" type="text" id="number2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary mb-2"
+          id="check"
+          onclick="check2()"
         >
           Check
         </button>

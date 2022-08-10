@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -85,13 +86,13 @@
       </div>
     </nav>
     <div class="container text-center">
-      <h1 class="text-center my-2">Tax Caclulator</h1>
+      <h1 class="text-center my-2">Savings Caclulator</h1>
       <img
         class="w-50 rounded"
         src="https://media.istockphoto.com/vectors/piggy-bank-with-coin-symbol-of-new-year-2019-vector-illustration-vector-id1080435824?k=20&m=1080435824&s=612x612&w=0&h=gMQQ5ZEucbBtkQi6Fe_zTmSFumeinnp6QySj4BAI_gc="
         alt=""
       />
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Time(years)</span
         >
@@ -103,7 +104,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Your Income Per Month</span
         >
@@ -115,7 +116,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Your Spendings Per Month</span
         >
@@ -130,6 +131,25 @@
           class="btn bg-opacity-25 bg-secondary"
           id="check"
           onclick="check()"
+        >
+          Check
+        </button>
+      </div>
+      <div class="inputs-2">
+        <span>Time(years)</span>
+        <input class="mb-2" type="text" id="time2" />
+      </div>
+      <div class="inputs-2">
+        <span>Your Income Per Month</span>
+        <input class="mb-2" type="text" id="income2" />
+      </div>
+      <div class="inputs-2">
+        <span>Your Spendings Per Month</span>
+        <input class="mb-2" type="text" id="spendings2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary mb-2"
+          id="check"
+          onclick="check2()"
         >
           Check
         </button>
