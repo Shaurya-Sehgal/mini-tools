@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -92,15 +93,11 @@
         alt=""
       />
       <br />
-      <select
-        name=""
-        id="options"
-        class="p-1 rounded bg-secondary bg-opacity-25"
-      >
+      <select id="options" class="p-1 rounded bg-secondary bg-opacity-25 mb-3">
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="input-group my-3 w-50 m-auto inputs">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Height(cm)</span
         >
@@ -112,7 +109,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="input-group my-3 w-50 m-auto inputs">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Weight(kg)</span
         >
@@ -124,7 +121,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="input-group my-3 w-50 m-auto inputs">
         <span class="input-group-text" id="inputGroup-sizing-default">Age</span>
         <input
           type="number"
@@ -135,13 +132,32 @@
         />
       </div>
       <button
-        class="btn bg-opacity-25 bg-secondary w-50"
+        class="btn bg-opacity-25 bg-secondary w-50 inputs"
         id="check"
         onclick="check()"
       >
         Check
       </button>
-      <h1 class="text-center mt-5 text-warning" id="result"></h1>
+      <div class="inputs-2">
+        <span>Height(cm)</span>
+        <input class="mb-2" type="text" id="height2" />
+      </div>
+      <div class="inputs-2">
+        <span>Weight(kg)</span>
+        <input class="mb-2" type="text" id="weight2" />
+      </div>
+      <div class="inputs-2">
+        <span>Age</span>
+        <input class="mb-2" type="text" id="age2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary"
+          id="check"
+          onclick="check2()"
+        >
+          Check
+        </button>
+      </div>
+      <h1 class="text-center mt-2 text-warning" id="result"></h1>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

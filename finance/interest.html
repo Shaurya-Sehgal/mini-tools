@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -91,7 +92,7 @@
         src="https://harborviewfunding.com/images/purchase-loan.png"
         alt=""
       />
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Amount Of Money</span
         >
@@ -103,7 +104,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Annual Rate</span
         >
@@ -124,11 +125,18 @@
       </div>
       <div class="inputs-2">
         <span>Amount Of Money</span>
-        <input class="mb-2" type="text" id="time2" />
+        <input class="mb-2" type="text" id="money2" />
       </div>
       <div class="inputs-2">
-        <span>Your Income Per Month</span>
-        <input class="mb-2" type="text" id="income2" />
+        <span>Annual Rate</span>
+        <input class="mb-2" type="text" id="annualRate2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary"
+          id="check"
+          onclick="check2()"
+        >
+          Check
+        </button>
       </div>
     </div>
     <h1 class="text-center text-warning" id="result"></h1>

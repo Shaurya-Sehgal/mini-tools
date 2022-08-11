@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav
@@ -91,7 +92,7 @@
         src="https://images.everydayhealth.com/images/diet-nutrition/weight/bmi-in-adults-722x406.jpg?sfvrsn=9f226e4c_0"
         alt=""
       />
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Height(meters)</span
         >
@@ -103,7 +104,7 @@
           aria-describedby="inputGroup-sizing-default"
         />
       </div>
-      <div class="input-group my-3 w-50 m-auto">
+      <div class="inputs input-group my-3 w-50 m-auto">
         <span class="input-group-text" id="inputGroup-sizing-default"
           >Weight(kg)</span
         >
@@ -116,12 +117,27 @@
         />
       </div>
       <button
-        class="btn bg-opacity-25 bg-secondary w-50"
+        class="btn bg-opacity-25 bg-secondary w-50 inputs"
         id="check"
         onclick="check()"
       >
         Check
       </button>
+      <div class="inputs-2">
+        <span>Height(meters)</span>
+        <input class="mb-2" type="text" id="height2" />
+      </div>
+      <div class="inputs-2">
+        <span>Weight(kg)</span>
+        <input class="mb-2" type="text" id="weight2" />
+        <button
+          class="btn bg-opacity-25 bg-secondary"
+          id="check"
+          onclick="check2()"
+        >
+          Check
+        </button>
+      </div>
       <h1 class="text-center mt-5" id="result"></h1>
     </div>
     <script
