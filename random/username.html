@@ -10,22 +10,6 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <style>
-      .inputs-2 {
-        display: none;
-      }
-      @media screen and (max-width: 768px) {
-        .inputs {
-          display: none;
-        }
-        .inputs-2 {
-          display: block;
-        }
-        .inputs-2 input {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
   <body>
     <nav
@@ -65,7 +49,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="/mini-tools/finance.html"
                 >Finance</a
@@ -81,7 +65,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link active"
                 aria-current="page"
                 href="/mini-tools/random.html"
                 >Randomness</a
@@ -101,49 +85,58 @@
       </div>
     </nav>
     <div class="container text-center">
-      <h1 class="text-center my-2">Tax Calculator</h1>
-      <img
-        class="mb-2 w-50 rounded"
-        src="https://us.123rf.com/450wm/sodis/sodis1807/sodis180700018/104780600-buying-a-property-flat-design-vector-illustration-.jpg?ver=6"
-        alt=""
-      />
-      <div class="inputs input-group my-3 w-50 m-auto">
-        <span class="input-group-text" id="inputGroup-sizing-default"
-          >Income</span
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="income"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
+      <h1 class="text-center my-2">Username Generator</h1>
+      <a href="#" onclick="check()">
+        <img
+          class="w-50 rounded my-3 pe-"
+          id="die"
+          src="https://images.theconversation.com/files/186076/original/file-20170914-8971-1bvg0di.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+          alt=""
         />
+      </a>
+      <div>
         <button
-          class="btn bg-opacity-25 bg-secondary"
+          class="btn bg-opacity-25 bg-secondary my-2 w-50"
           id="check"
-          onclick="check()"
+          onclick="create()"
         >
-          Check
-        </button>
-      </div>
-      <div class="inputs-2">
-        <span>Number</span>
-        <input class="mb-2" type="text" id="income2" />
-        <button
-          class="btn bg-opacity-25 bg-secondary mb-2"
-          id="check"
-          onclick="check2()"
-        >
-          Check
+          Create Username
         </button>
       </div>
     </div>
     <h1 class="text-center text-warning" id="result"></h1>
+    <button onclick="copyUsername()">Copy username</button>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script src="tax.js"></script>
+    <script>
+      let words = [
+        "cool",
+        "dog",
+        "car",
+        "toys",
+        "tea",
+        "mouse",
+        "cat",
+        "keys",
+        "lock",
+        "lame",
+        "hehe",
+      ];
+      function create() {
+        let username = "";
+        let i = 0;
+        while (i < 3) {
+          let number = Math.random() * 10;
+          number = Math.floor(number);
+          username = username + words[number] + "-";
+          i = i + 1;
+        }
+        document.getElementById("result").innerText = username;
+        navigator.clipboard.writeText(username);
+      }
+    </script>
   </body>
 </html>

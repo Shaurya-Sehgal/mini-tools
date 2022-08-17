@@ -10,7 +10,22 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .inputs-2 {
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        .inputs {
+          display: none;
+        }
+        .inputs-2 {
+          display: block;
+        }
+        .inputs-2 input {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav
